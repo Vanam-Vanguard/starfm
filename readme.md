@@ -7,3 +7,9 @@ Installable version of STARFM algorithm for satellite image fusion implemented i
 ```python
 pip install --upgrade git+https://github.com/gluck3/starfm
 ```
+
+## Usage 
+
+```python
+from starfm import starfm as stp
+```

@@ -9,7 +9,7 @@ import zarr
 import numpy as np
 import dask.array as da
 from dask.diagnostics import ProgressBar
-from parameters import (windowSize, logWeight, temp, mid_idx, numberClass, spatImp, 
+from .parameters import (windowSize, logWeight, temp, mid_idx, numberClass, spatImp, 
                         specUncertainty, tempUncertainty, path)
 
  

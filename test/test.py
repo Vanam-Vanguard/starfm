@@ -3,20 +3,19 @@
 import time
 import rasterio
 import numpy as np
-import starfm4py as stp
 import matplotlib.pyplot as plt
-from parameters import (path, sizeSlices)
 
-
+from starfm import starfm as stp
+from starfm.parameters import (path, sizeSlices)
 
 start = time.time()
 
 #Set the path where the images are stored
-product = rasterio.open('Test_3/sim_Landsat_t1.tif')
+product = rasterio.open('Test_1/sim_Landsat_t1.tif')
 profile = product.profile
-LandsatT0 = rasterio.open('Test_3/sim_Landsat_t1.tif').read(1)
-MODISt0 = rasterio.open('Test_3/sim_MODIS_t1.tif').read(1)
-MODISt1 = rasterio.open('Test_3/sim_MODIS_t4.tif').read(1)
+LandsatT0 = rasterio.open('Test_1/sim_Landsat_t1.tif').read(1)
+MODISt0 = rasterio.open('Test_1/sim_MODIS_t1.tif').read(1)
+MODISt1 = rasterio.open('Test_1/sim_MODIS_t2.tif').read(1)
 
 # Set the path where to store the temporary results
 path_fineRes_t0 = 'Temporary/Tiles_fineRes_t0/'
