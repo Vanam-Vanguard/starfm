@@ -18,6 +18,6 @@ setup(
      packages=find_packages(),
      py_modules=['starfm'],
      install_requires=install_req,
-     python_requires="==3.10",
+     python_requires=">=3.8",
      setup_requires=['setuptools'],
 )
